@@ -1,3 +1,17 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
+
+@layer components {
+    .activeTab {
+        pointer-events: none;
+        @apply text-white bg-sky-700
+    }
+
+    .activeTab div svg {
+        pointer-events: none;
+        @apply fill-white;
+    }
+}
+
+
